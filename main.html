@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image:radial-gradient(rgb(236, 160, 54),rgb(100, 178, 234),rgb(131, 211, 65));
+        }
+
+        header {
+            background-image:radial-gradient(rgb(189, 190, 236),rgb(240, 186, 231),rgb(106, 243, 116));
+            color: #121212;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 50px 0;
+        }
+
+        .pricing-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            background-color: #fff;
+            transition: transform 0.3s;
+        }
+
+        .pricing-card:hover {
+            transform: scale(1.05);
+        }
+
+        .selected {
+            border: 2px solid #007bff;
+        }
+        #basic{
+            background-color: rgb(243, 243, 99);
+        }
+        #standard{
+            background-color: rgb(32, 235, 113);
+        }
+        #premium{
+            background-color: rgb(241, 57, 57);
+        }
+        .price {
+            font-size: 20px;
+            color: #007bff;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .features {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        h2{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Choose Your Plan</h1>
+    </header>
+
+    <div class="pricing-container">
+        <div class="pricing-card" id="basic">
+            <h2>Basic</h2>
+            <p class="price">$19.99/month</p>
+            <ul class="features">
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+            <button onclick="change()">Select Plan</button>
+        </div>
+
+        <div class="pricing-card" id="standard">
+            <h2>Standard</h2>
+            <p class="price">$29.99/month</p>
+            <ul class="features">
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+            <button onclick="change()">Select Plan</button>
+        </div>
+
+        <div class="pricing-card" id="premium">
+            <h2>Premium</h2>
+            <p class="price">$39.99/month</p>
+            <ul class="features">
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+            <button onclick="change()">Select Plan</button>
+        </div>
+    </div>
+
+    <script>
+        function change(){
+            window.location.href="sub.html";
+        }
+    </script>
+</body>
+</html>
+
